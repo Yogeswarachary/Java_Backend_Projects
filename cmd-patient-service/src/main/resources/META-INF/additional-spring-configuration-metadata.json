@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "spring.jpa.hibernate.properties",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.properties'"
+  },
+  {
+    "name": "spring.jpa.hibernate.hibernate.database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.hibernate.database-platform'"
+  },
+  {
+    "name": "spring.swagger.url.production-uRL",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.swagger.url.production-uRL'"
+  },
+  {
+    "name": "spring.eureka.client",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.eureka.client'"
+  },
+  {
+    "name": "swagger.url.local-uRL",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.url.local-uRL'"
+  },
+  {
+    "name": "swagger.url.productionURL",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.url.productionURL'"
+  },
+  {
+    "name": "spring.application.profiles.active",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.application.profiles.active'"
+  }
+]}
