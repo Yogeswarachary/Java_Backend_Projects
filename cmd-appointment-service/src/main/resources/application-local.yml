@@ -1,0 +1,55 @@
+server:
+  port: 8091
+  servlet:
+    context-path: /appointment
+#  ssl:
+#
+#    key-alias: selfsigned_localhost_sslserver
+#    key-store: classpath:ssl-server.jks
+#    key-store-type: JKS
+#    key-password: changeit  
+
+spring:
+  application:
+    name: appointment-service 
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/appointmenttServicedatabase?createDatabaseIfNotExist=true
+    #url: jdbc:mysql://db.ccb27u4ngh0j.ap-south-1.rds.amazonaws.com:3306/appointmentService?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+     ddl-auto: update
+    properties:
+     hibernate:
+            database-platform: org.hibernate.dialect.MySQL8Dialect
+           
+#swagger:
+#  url:
+#     #productionURL: https://virtusa-appointment.learn.skillassure.com/appointment
+#     localURL: https://localhost:${server.port}/appointment
+
+  
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+logging:
+  file:
+    name: inventory.log`
+  pattern:
+    console: '%d %-5level %logger : %msg%n'
+    file: '%d %-5level [%thread] %logger : %msg%n'
+  level:
+    '[org.springframework.web]': INFO
+    '[com.ros.inventory]': DEBUG
+    '[org.hibernate]': INFO

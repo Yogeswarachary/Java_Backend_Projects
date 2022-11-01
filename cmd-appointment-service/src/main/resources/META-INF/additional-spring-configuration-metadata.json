@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "images.path",
+    "type": "java.lang.String",
+    "description": "A description for 'images.path'"
+  },
+  {
+    "name": "swagger.url",
+    "type": "java.lang.String",
+    "description": "A description for 'swagger.url'"
+  }
+]}
