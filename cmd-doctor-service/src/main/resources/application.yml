@@ -1,0 +1,10 @@
+server:
+  port: 8069
+  servlet:
+    context-path: /doctor
+    
+spring:
+  application:
+    name: doctor-service
+  profiles:
+    active: local
