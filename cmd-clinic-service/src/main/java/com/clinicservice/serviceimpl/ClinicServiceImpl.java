@@ -17,7 +17,9 @@ import com.clinicservice.repository.CityRepository;
 import com.clinicservice.repository.ClinicRepository;
 import com.clinicservice.repository.DoctorRepository;
 import com.clinicservice.service.ClinicService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ClinicServiceImpl implements ClinicService{
 	
 	@Autowired

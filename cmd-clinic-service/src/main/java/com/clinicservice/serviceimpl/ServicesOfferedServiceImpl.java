@@ -14,7 +14,9 @@ import com.clinicservice.pojo.ServiceRequest;
 import com.clinicservice.repository.ClinicRepository;
 import com.clinicservice.repository.ServicesRepository;
 import com.clinicservice.service.ServicesOfferedService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ServicesOfferedServiceImpl implements ServicesOfferedService{
 	
 	@Autowired

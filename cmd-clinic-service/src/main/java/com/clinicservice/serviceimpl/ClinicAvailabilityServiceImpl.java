@@ -13,7 +13,9 @@ import com.clinicservice.exception.ClinicNotFoundException;
 import com.clinicservice.repository.ClinicAvailabilityRepository;
 import com.clinicservice.repository.ClinicRepository;
 import com.clinicservice.service.ClinicAvailabilityService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ClinicAvailabilityServiceImpl implements ClinicAvailabilityService{
 	
 	@Autowired

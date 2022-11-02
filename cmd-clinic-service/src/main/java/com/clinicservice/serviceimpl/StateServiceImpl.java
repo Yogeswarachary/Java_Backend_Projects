@@ -6,7 +6,9 @@ import com.clinicservice.entites.State;
 import com.clinicservice.exception.StateAlreadyExistException;
 import com.clinicservice.repository.StateRepository;
 import com.clinicservice.service.StateService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StateServiceImpl implements StateService{
 	
 	@Autowired
