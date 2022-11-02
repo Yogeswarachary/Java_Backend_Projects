@@ -10,7 +10,9 @@ import com.clinicservice.exception.StateNotFoundException;
 import com.clinicservice.repository.CityRepository;
 import com.clinicservice.repository.StateRepository;
 import com.clinicservice.service.CityService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CityServiceImpl implements CityService{
 	
 	@Autowired
